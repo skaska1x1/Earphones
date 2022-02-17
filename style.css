@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --link-color: #4793C7;
+    --section-desc-color: #EEF6DF;
+    --checklist-color: #DB4EA0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.header {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    position: relative;
+    /* background:  linear-gradient(0deg, rgba(219, 78, 160, 0.5), rgba(219, 78, 160, 0.5)), #DB4EA0;
+    background-blend-mode: multiply, hue; */
+    background: url(./img/mainPic.jpg) no-repeat;
+    /* margin-bottom: 24px; */
+}
+.header img{
+    position: absolute;
+    right: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-left: 57px;/*42+15*/
+    padding-right: 15px;
+}
+.title {
+    width: 990px;
+    height: 782px;
+    color: var(--white);
+    /* padding: 297px 396px 263px 534px; */
+}
+
+.title h1{
+    /* width: 101%; */
+    position: absolute;
+    padding-top: 297px;
+    margin-left: 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 100%;
+}
+
+
+.section-desc {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(./img/sectionDescPic.jpg) round;
+    color: var(--section-desc-color);
+    margin-bottom: 34px;
+
+}
+.section-desc p{
+    max-width: 856px;
+    letter-spacing: 0.05em;
+    /* font-weight: normal; */
+    font-size: 24px;
+    line-height: 120%;
+}
+.section-desc p:nth-child(1){
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.section-desc p:nth-last-child(1){
+    max-width: 868px;
+    padding-bottom: 75px;
+}
+
+
+
+.section-checklist {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    margin-bottom: 28px;
+    color: var(--black);
+    background: url(./img/checklistPic.jpg) round;
+}
+.section-checklist img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.section-checklist__title {
+    color: var(--checklist-color);
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 120%;
+
+    
+    margin-bottom: 62px;
+}
+.checklist-list h3{
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 140%;
+
+    margin-bottom: 23px;
+}
+.checklist-list p{
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 140%;
+}
+/* .checklist-list__box p:nth-child(0){
+    width: 652px;
+} */
+.checklist-list__box-p1{
+    width: 655px;
+}
+
+/* .checklist-list__box:nth-child(2n){
+    width: 762px;
+} */
+.checklist-list ul li{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 78px;
+}
+.checklist-list ul li:nth-child(2){
+    max-width: 876px;
+}
+.checklist-list ul li:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+/* .checklist-list ul li h3.checklist-list__title:nth-last-child(3){
+    max-width: 470px;
+} */
+input::before{
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(./img/inputFill0.svg) no-repeat;
+}
+input{
+    width: 50px;
+    height: 50px;
+    margin-right: 36px;
+}
+
+.checklist-list ul li a{
+    border-bottom: 1px solid var(--link-color);
+    color: var(--checklist-color);
+}
+.checklist-list ul li a:hover{
+    color: blue;
+    border-bottom: blue;
+}
+.checklist-list__title {
+    max-width: 615px;
+}
+.checklist-list__title-last {
+    width: 810px;
+}
+
+
+
+footer{
+    max-width: 1920px;
+    margin: 0 auto;
+    background: var(--checklist-color);
+    
+}
+footer h2{
+    min-width: 1000px;
+    color: var(--white);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 120%;
+
+    padding-top: 23px;
+    padding-bottom: 32px;
+}
+
+
+@media (max-width:1655px) {
+    .header img{
+        display: none;
+    }
+    .section-checklist img{
+        display: none;
+    }
+}
+
+@media (max-width:1250px) {
+    .header h1{
+        font-size: 100px;
+    }
+    .container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    .header {
+        min-width: 1200px;
+    }
+    .section-desc {
+        min-width: 1200px;
+    }
+    .section-checklist {
+        min-width: 1200px;
+    }
+    footer{
+        min-width: 1200px;
+    }
+}

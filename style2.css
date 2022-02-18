@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --blue: blue;
+    --link-color: #4793C7;
+    --section-desc-color: #EEF6DF;
+    --checklist-color: #DB4EA0;
+    --footer-color: #FFB294;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.header {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 323px;
+    padding-bottom: 323px;
+    /* margin-bottom: 24px; */
+    position: relative;
+    background: url(./img2/backgroundMain.jpg) no-repeat;
+    mix-blend-mode: normal;
+    color: var(--white);
+
+}
+.header img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header img:last-child{
+    position: absolute;
+    right: 240px;
+    top: 0;
+}
+
+.container {
+    max-width: 870px;
+    margin: 0 auto;
+    padding-left: 57px;
+    padding-right: 15px;
+}
+
+.title {
+    text-transform: uppercase; 
+    width: 75%;
+
+    /* font-family: Rubik;
+    font-style: normal; */
+    font-weight: 900;
+    font-size: 64px;
+    /* line-height: 100%; */
+    /* or 64px */
+
+    /* letter-spacing: 0.05em; */
+    
+}
+
+
+.section-text {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+
+    padding-top: 60px;
+    padding-bottom: 98px;
+}
+
+.section-text a{
+    color: var(--link-color);
+    border-bottom: 1px solid var(--link-color);
+
+    font-size: 24px;
+    line-height: 140%;
+
+    /* text-decoration-line: underline; */
+}
+.section-text a:hover{
+    color: var(--blue);
+    border-bottom: none;
+}
+
+/* .section-text .container{
+    max-width: 900px;
+} */
+.section-text img{
+    position: absolute;
+    left: 213px;top: 60px;
+}
+
+.section-text__desc {
+    max-width: 870px;
+
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    
+
+    color: var(--black);
+}
+.section-text__desc p:first-child{
+    margin-bottom: 20px;
+}
+.section-text__desc p:last-child{
+    margin-bottom: 97px;
+    letter-spacing: -0.05em;
+}
+
+
+footer{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-top: 23px;
+    padding-bottom: 32px;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.2em;
+    color: var(--white);
+    background: var(--footer-color);
+}
+
+/* footer .container{
+    overflow: hidden;
+} */
+footer p{
+    margin: 0 auto;
+    margin-left: 581px;
+}

@@ -35,7 +35,6 @@ body{
     /* background:  linear-gradient(0deg, rgba(219, 78, 160, 0.5), rgba(219, 78, 160, 0.5)), #DB4EA0;
     background-blend-mode: multiply, hue; */
     background: url(./img/mainPic.jpg) no-repeat;
-    /* margin-bottom: 24px; */
 }
 .header img{
     position: absolute;

@@ -53,7 +53,7 @@ body{
 }
 
 .container {
-    max-width: 870px;
+    max-width: 55%; /*870px*/
     margin: 0 auto;
     padding-left: 57px;
     padding-right: 15px;
@@ -138,10 +138,159 @@ footer{
     background: var(--footer-color);
 }
 
-/* footer .container{
-    overflow: hidden;
-} */
+footer .container{
+    
+}
 footer p{
     margin: 0 auto;
-    margin-left: 581px;
+    /* margin-left: 581px; */
 }
+
+@media (max-width: 1920px) {
+    /* footer{
+        padding-left: 30%;
+    }
+    footer p{
+        margin-left: 0px;
+    } */
+    footer .container{
+        width: 105%;
+    }
+}
+
+@media (max-width: 1823px) {
+    .header img{
+        display: none;
+    }
+    .title p{
+        font-size: 72px;
+    }
+    /* footer{
+        padding-left: 6%;
+        
+    }
+    footer p{
+        margin-left: 0;
+    } */
+}
+
+@media (max-width: 1606px) {
+    .header img{
+        display: none;
+    }
+    
+    .section-text img{
+        display: none;
+    }
+    /* footer p{
+        margin-left: 490px;
+    } */
+}
+
+@media (max-width: 1440px) {
+    .container{
+        max-width: 1440px;
+        margin-left: 0;
+    }
+    .title p{
+        width: 55%;
+    }
+
+    .header{
+        min-width: 1440px;
+    }
+
+    .section-text{
+        min-width: 1440px;
+    }
+
+    footer{
+        min-width: 1440px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container{
+        max-width: 1024px;
+        margin-left: 0;
+    }
+    .title p{
+        width: 55%;
+    }
+    .section-text__desc{
+        width: 71%;
+    }
+    footer p{
+        width: 78%;
+        margin-left: 0;
+    }
+
+    .header{
+        min-width: 1024px;
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+
+    .section-text{
+        min-width: 1024px;
+    }
+
+    footer{
+        min-width: 1024px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 768px;
+        margin-left: 0;
+    }
+    .title p{
+        font-size: 50px;
+    }
+
+    .header{
+        min-width: 768px;
+    }
+
+    .section-text{
+        min-width: 768px;
+    }
+
+    footer{
+        min-width: 768px;
+    }
+    footer p{
+        font-size: 42px;
+    }
+}
+
+/* @media (max-width: 425px) {
+    .header{
+        min-width: 425px;
+    }
+
+    .section-text{
+        min-width: 425px;
+    }
+
+    footer{
+        min-width: 425px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header{
+        min-width: 320px;
+    }
+
+    .section-text{
+        min-width: 320px;
+    }
+
+    footer{
+        min-width: 320px;
+    }
+} */
+
+

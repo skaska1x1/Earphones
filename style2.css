@@ -146,11 +146,11 @@ footer p{
     /* margin-left: 581px; */
 }
 
-@media (max-width: 1920px) {
-    /* footer{
-        padding-left: 30%;
+@media (max-width: 1885px) {
+    footer .container {
+        font-size: 44px;
     }
-    footer p{
+    /* footer p{
         margin-left: 0px;
     } */
     /* footer .container{
@@ -165,13 +165,7 @@ footer p{
     .title p{
         font-size: 72px;
     }
-    /* footer{
-        padding-left: 6%;
-        
-    }
-    footer p{
-        margin-left: 0;
-    } */
+    
 }
 
 @media (max-width: 1606px) {

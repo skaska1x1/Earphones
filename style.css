@@ -224,6 +224,7 @@ footer h2{
         display: none;
     }
     footer h2 {
+        wigth: 100%;
         font-size: 43px;
     }
 }

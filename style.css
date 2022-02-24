@@ -193,7 +193,7 @@ footer{
     
 }
 footer h2{
-    max-width: 1000px;
+    width: 1000px;
     color: var(--white);
     letter-spacing: 0.2em;
     text-transform: uppercase;

@@ -138,9 +138,9 @@ footer{
     background: var(--footer-color);
 }
 
-footer .container{
+/* footer .container{
     
-}
+} */
 footer p{
     margin: 0 auto;
     /* margin-left: 581px; */
@@ -153,9 +153,9 @@ footer p{
     footer p{
         margin-left: 0px;
     } */
-    footer .container{
+    /* footer .container{
         width: 105%;
-    }
+    } */
 }
 
 @media (max-width: 1823px) {
@@ -188,6 +188,10 @@ footer p{
 }
 
 @media (max-width: 1440px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
     .container{
         max-width: 1440px;
         margin-left: 0;
@@ -197,15 +201,18 @@ footer p{
     }
 
     .header{
-        min-width: 1440px;
+        max-width: 1440px;
     }
 
     .section-text{
-        min-width: 1440px;
+        max-width: 1440px;
     }
 
     footer{
-        min-width: 1440px;
+        max-width: 1440px;
+    }
+    footer p{
+        max-width: 1300px;
     }
 }
 

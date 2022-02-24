@@ -1,0 +1,249 @@
+@import "./reset";
+
+$fz: 24px;
+$maxW: 1920px;
+$minW:1200px;
+$color-link: #4793C7;
+$color-link_hover: #2b536d;
+$color-white: #fff;
+$black-white: #000;
+$footer-color: #72C8BA;
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: $fz;
+    font-style: normal;
+    font-weight: normal;
+}
+.container {
+    max-width: 856px;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    max-width: $maxW;
+    margin: 0 auto;
+    background: url(../img3/header_backgr.jpg) no-repeat;
+    .header-img1 {
+        position: absolute;
+        right: 0; // 115px
+        top: 0;
+        width: 972px;
+        height: 1025px;
+    }
+}
+
+.header__top {
+    // padding: 323px auto 256px auto;
+    padding-top: 323px;
+    padding-bottom: 235px; // 256px
+    >h1 {
+        width: 465px;
+        font-weight: 900;
+        color: $color-white;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-size: 64px;
+        line-height: 100%;
+    }
+}
+
+main{
+    position: relative;
+    max-width: $maxW;
+    img{
+        position: absolute;
+        margin-left: 204px;
+        margin-top: 67px;
+    }
+    a{
+        display: inline-block;
+        color: $color-link;
+        margin-bottom: 111px;
+        border-bottom: 2px solid $color-link;
+    }
+    & a:hover{
+        color: $color-link_hover;
+        border-bottom: transparent 2px solid;
+    }
+}
+.desc {
+    padding-top: 67px;
+    padding-bottom: 100px;
+    color: $black-white;
+    line-height: 140%;
+    h2{
+        font-size: 36px;
+        margin-bottom: 37px;
+    }
+    p{
+        margin-bottom: 37px;
+    }
+    .desc__mb{
+        margin-bottom: 100px;
+    }
+    .desc__travel {
+        margin-bottom: 50px;
+    }
+    .desc__game {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    max-width: $maxW;
+    margin: 23px auto 34px auto;
+    // padding-left: 534px / $maxW * 100%;
+    // padding-right: 370px / $maxW * 100%;
+    background-color: $footer-color;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0.2em;
+    .container {
+        p {
+            width: 1010px;
+            margin: 23px auto 34px auto;
+            display: inline-block;
+            color: $color-white;
+        }
+    }
+    
+}
+
+@media (max-width:1900px) {
+    header {
+        .header-img1 {
+            display: none;
+        }
+    }
+    main {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:1400px) {
+    footer {
+        // min-width: $minW;
+        p{
+            font-size: 44px;
+        }
+        
+    }
+}
+
+$minW:1200px;
+@media (max-width: $minW) {
+    body{
+        .container{
+            margin-left: 40px;
+            padding-left: 15px;
+        }
+        header {
+            max-width: $minW;
+            .header__top{
+                >h1{
+                    font-size: 70px;
+                    width: 600px;
+                }
+            }
+            
+        }
+        main {
+            max-width: $minW;
+        }
+        footer {
+            max-width: $minW;
+            .container{
+                >p{
+                    width: 100%;
+                    font-size: 36px;
+                }
+            }
+            
+        }
+    }
+}
+
+$w900: 900px;
+@media (max-width: $w900) {
+    body{
+        footer {
+            .container {
+                >p{
+                    font-size: 28px;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+
+$w768: 768px;
+@media (max-width: $w768) {
+    html,body{
+        overflow-x: hidden
+        }
+    body{
+        .container{
+            margin-left: 40px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        header {
+            max-width: $w768;
+            .header__top {
+                h1{
+                    width: inherit;
+                    font-size: 60px;
+                }
+            }
+            
+        }
+        main {
+            max-width: $w768;
+        }
+        footer {
+            max-width: $w768;
+            .container{
+                p{
+                    width: 100%;
+                    font-size: 30px;
+                    line-height: 100%;
+                    letter-spacing: 0;
+                }
+            }
+            
+        }
+    }
+}
+
+$w425: 425px;
+@media (max-width: 425px) {
+    body {
+        header {
+            max-width: $w425;
+            .header__top {
+                h1{
+                    font-size: 47px;
+                }
+            }
+        }
+    }
+    main {
+        max-width: $w425;
+    }
+    footer {
+        max-width: $w425;
+        .container {
+            max-width: 425px;
+            // margin-left: 0;
+        }
+    }
+    .container {
+        max-width: $w425;
+    }
+}

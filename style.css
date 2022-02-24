@@ -193,7 +193,7 @@ footer{
     
 }
 footer h2{
-    min-width: 1000px;
+    max-width: 1000px;
     color: var(--white);
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -206,13 +206,25 @@ footer h2{
     padding-bottom: 32px;
 }
 
+/* img {
+    width: 100%;
+    height: auto;
+} */
+
 
 @media (max-width:1655px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
     .header img{
         display: none;
     }
     .section-checklist img{
         display: none;
+    }
+    footer h2 {
+        font-size: 43px;
     }
 }
 
@@ -220,37 +232,140 @@ footer h2{
     .header h1{
         font-size: 100px;
     }
-    .container {
+    .title {
+        width: 100%;
+    }
+    /* .container {
         margin-left: 0;
+    } */
+}
+
+
+@media (max-width:1080px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .header {
+        max-width: 1080px;
+    }
+    /* .title {
+        width: 100%;
+    } */
+    .section-desc {
+        max-width: 1080px;
+    }
+    .section-checklist {
+        max-width: 1080px;
+    }
+    .section-checklist .container {
+        padding-left: 10px;
+    }
+    footer{
+        max-width: 1080px;
+    }
+    footer h2 {
+        font-size: 40px;
     }
 }
 
-/* @media (max-width:1200px) {
+@media (max-width: 900px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 100px;
+    }
     .header {
-        max-width: 1200px;
+        max-width: 900px;
+    }
+    .title h1 {
+        font-size: 92px;
     }
     .section-desc {
-        max-width: 1200px;
+        max-width: 900px;
     }
     .section-checklist {
-        max-width: 1200px;
+        max-width: 900px;
+    }
+    .section-checklist .container {
+        padding-left: 30px;
+    }
+    .section-checklist__title {
+        font-size: 45px;
+    }
+    .section-checklist__box p{
+        width: 100%;
+    }
+    .checklist-list input {
+        display: none;
+    }
+    .checklist-list__title-last {
+        width: inherit;
     }
     footer{
-        max-width: 1200px;
+        max-width: 900px;
     }
-} */
+    footer h2 {
+        font-size: 35px;
+    }
+}
 
-@media (max-width:1080px) {
+
+@media (max-width: 768px) {
+    html,body {
+        overflow-x: hidden
+    }
+    .container {
+        padding-left: 30px;
+        padding-right: 50px;
+    }
     .header {
-        min-width: 1080px;
+        max-width: 768px;
+        margin-right: 0;
+    }
+    .title{
+        height: 500px;
+    }
+    .title h1 {
+        font-size: 73px;
+        padding-top: 200px;
     }
     .section-desc {
-        min-width: 1080px;
+        max-width: 768px;
     }
     .section-checklist {
-        min-width: 1080px;
+        max-width: 768px;
+    }
+    .section-checklist h2 {
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 0;
+    }
+    .section-checklist h3 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .section-checklist p{
+        font-size: 20px;
+        width: inherit;
     }
     footer{
-        min-width: 1080px;
+        max-width: 768px;
+    }
+    footer h2{
+        width: inherit;
+        font-size: 30px;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 530px) {
+    .title h1 {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 425px) {
+    .title h1 {
+        font-size: 41px;
     }
 }

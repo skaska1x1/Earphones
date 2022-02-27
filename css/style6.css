@@ -85,28 +85,28 @@ body {
   margin: 0 auto;
 }
 
+/*--------------------*/
+/* header */
 header {
   position: relative;
   max-width: 1920px;
   margin: 0 auto;
-  background: url(../img3/header_backgr.jpg) no-repeat;
+  background: url(../img6/header-back.jpg) no-repeat;
 }
 
 header .header-img1 {
   position: absolute;
   right: 0;
   top: 0;
-  width: 972px;
-  height: 1025px;
 }
 
-.header__top {
+header .header__top {
   padding-top: 323px;
-  padding-bottom: 235px;
+  padding-bottom: 204px;
 }
 
-.header__top > h1 {
-  width: 465px;
+header .header__top > h1 {
+  width: 664px;
   font-weight: 900;
   color: #fff;
   letter-spacing: 0.05em;
@@ -115,6 +115,8 @@ header .header-img1 {
   line-height: 100%;
 }
 
+/*--------------------*/
+/* main */
 main {
   position: relative;
   max-width: 1920px;
@@ -139,50 +141,48 @@ main a:hover {
   border-bottom: transparent 2px solid;
 }
 
-.desc {
-  padding-top: 67px;
-  padding-bottom: 100px;
+main .desc {
+  padding-top: 75px;
   color: #000;
   line-height: 140%;
 }
 
-.desc h2 {
-  font-size: 36px;
-  margin-bottom: 37px;
-}
-
-.desc p {
-  margin-bottom: 37px;
-}
-
-.desc .desc__mb {
+main .desc .desc__mb {
   margin-bottom: 100px;
 }
 
-.desc .desc__travel {
-  margin-bottom: 50px;
+main .desc .desc__mb > p {
+  margin-bottom: 35px;
 }
 
-.desc .desc__game {
-  margin-bottom: 0;
+main .desc .desc__mb > p:first-child {
+  max-width: 773px;
 }
 
+main .desc .desc__mb > p:last-child {
+  max-width: 800px;
+}
+
+/*--------------------*/
+/* footer */
 footer {
   max-width: 1920px;
   margin: 23px auto 34px auto;
-  background-color: #72C8BA;
+  background-color: #DB4EA0;
   font-size: 48px;
   line-height: 120%;
   letter-spacing: 0.2em;
 }
 
 footer .container p {
-  width: 1010px;
+  min-width: 1011px;
   margin: 23px auto 34px auto;
   display: inline-block;
   color: #fff;
 }
 
+/*--------------------*/
+/* media */
 @media (max-width: 1900px) {
   header .header-img1 {
     display: none;
@@ -207,8 +207,8 @@ footer .container p {
     max-width: 1200px;
   }
   body header .header__top > h1 {
-    font-size: 70px;
-    width: 600px;
+    font-size: 69px;
+    width: 100%;
   }
   body main {
     max-width: 1200px;
@@ -217,12 +217,18 @@ footer .container p {
     max-width: 1200px;
   }
   body footer .container > p {
-    width: 100%;
+    max-width: 100%;
+    min-width: 0;
     font-size: 36px;
   }
 }
 
 @media (max-width: 900px) {
+  body .container {
+    margin-left: 0px;
+    padding-left: 20pxpx;
+    padding-right: 20px;
+  }
   body footer .container > p {
     font-size: 28px;
   }
@@ -233,7 +239,6 @@ footer .container p {
     overflow-x: hidden;
   }
   body .container {
-    margin-left: 40px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -242,19 +247,40 @@ footer .container p {
   }
   body header .header__top h1 {
     width: inherit;
-    font-size: 60px;
+    font-size: 53px;
   }
   body main {
     max-width: 768px;
+  }
+  body main .desc__row5 > p:nth-child(3) {
+    width: 100%;
   }
   body footer {
     max-width: 768px;
   }
   body footer .container p {
+    max-width: 428px;
+    line-height: 140%;
+    letter-spacing: 0.2em;
+  }
+}
+
+@media (max-width: 620px) {
+  body header {
+    max-width: 620px;
+  }
+  body header .header__top h1 {
     width: 100%;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 37px;
+  }
+  body footer p {
+    font-size: 23px;
   }
 }
 
@@ -263,18 +289,25 @@ footer .container p {
     max-width: 425px;
   }
   body header .header__top h1 {
-    font-size: 34px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 27px;
   }
-  main {
+  body main {
     max-width: 425px;
   }
-  footer {
+  body footer {
     max-width: 425px;
   }
-  footer .container {
+  body footer .container {
     max-width: 425px;
   }
-  .container {
-    max-width: 425px;
+  body footer .container p {
+    font-size: 25px;
   }
 }

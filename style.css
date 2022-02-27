@@ -224,7 +224,7 @@ footer h2{
         display: none;
     }
     footer h2 {
-        wigth: 100%;
+        width: 100%;
         font-size: 43px;
     }
 }
@@ -236,9 +236,6 @@ footer h2{
     .title {
         width: 100%;
     }
-    /* .container {
-        margin-left: 0;
-    } */
 }
 
 
@@ -250,9 +247,6 @@ footer h2{
     .header {
         max-width: 1080px;
     }
-    /* .title {
-        width: 100%;
-    } */
     .section-desc {
         max-width: 1080px;
     }
